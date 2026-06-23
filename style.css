@@ -1,3 +1,4 @@
+
 /* GLOBAL */
 * {
     box-sizing: border-box;
@@ -65,15 +66,30 @@ h3 {
     width: 92%;
 }
 
-/* EXPERIENCE */
+/* EXPERIENCE BOX (FIXED HEIGHT + SPACING) */
 .about-container {
     display: flex;
     justify-content: center;
 }
 
 .about-card {
+    background: white;
+    padding: 12px;          /* reduced padding */
+    border-radius: 10px;
     text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     width: 200px;
+}
+
+/* tight spacing inside experience */
+.about-card h2 {
+    margin: 3px 0;
+    line-height: 1.1;
+}
+
+.about-card p {
+    margin: 1px 0;
+    line-height: 1.1;
 }
 
 /* PORTFOLIO */
@@ -92,6 +108,7 @@ h3 {
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     max-width: 900px;
     width: 92%;
+    text-align: center;
 }
 
 /* BUTTON */
@@ -110,22 +127,22 @@ h3 {
     background: #1d283d;
 }
 
-/* LINKS (IMPORTANT FIX) */
+/* LINKS */
 a {
     color: #2b3a55;
     text-decoration: none;
 }
 
 a:hover {
-    text-decoration: none;
     color: #1d283d;
+    text-decoration: none;
 }
 
 /* LINKEDIN */
 .linkedin-link {
+    color: #2b3a55;
     font-weight: 500;
     text-decoration: none;
-    color: #2b3a55;
 }
 
 .linkedin-link:hover {
@@ -170,5 +187,8 @@ footer {
     .card {
         width: 95%;
     }
-}
 
+    .project {
+        width: 95%;
+    }
+}
