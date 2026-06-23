@@ -1,3 +1,4 @@
+
 /* GLOBAL */
 * {
     box-sizing: border-box;
@@ -81,7 +82,7 @@ h3 {
     width: 200px;
 }
 
-/* ✅ EXPERIENCE TEXT SPACING FIX */
+/* EXPERIENCE TEXT SPACING FIX */
 .about-card h2 {
     margin: 4px 0;
     line-height: 1.1;
@@ -139,14 +140,35 @@ h2 {
     transform: translateY(-2px);
 }
 
-/* LINKS */
+/* ========================= */
+/* LINKS FIX (IMPORTANT)     */
+/* ========================= */
+
+/* remove underline globally */
 a {
     color: #2b3a55;
     text-decoration: none;
 }
 
+/* remove underline on hover too */
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: #1d283d;
+}
+
+/* LINKEDIN SPECIAL STYLE */
+.linkedin-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #2b3a55;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.linkedin-link:hover {
+    text-decoration: none;
+    color: #1d283d;
 }
 
 /* CONTACT */
