@@ -81,6 +81,18 @@ h3 {
     width: 200px;
 }
 
+/* ========================= */
+/* PORTFOLIO FIX START       */
+/* ========================= */
+
+/* Portfolio section wrapper */
+.portfolio {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
 /* PROJECT SECTION */
 h2 {
     text-align: center;
@@ -95,8 +107,11 @@ h2 {
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     max-width: 900px;
     width: 92%;
+
+    text-align: center; /* ✅ fixes left-aligned text issue */
 }
 
+/* BUTTON */
 .btn {
     display: inline-block;
     margin-top: 10px;
@@ -136,9 +151,7 @@ footer {
     color: white;
 }
 
-/* ===================== */
-/* MOBILE RESPONSIVE     */
-/* ===================== */
+/* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
 
     h1 {
