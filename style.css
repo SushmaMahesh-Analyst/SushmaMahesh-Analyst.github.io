@@ -81,11 +81,21 @@ h3 {
     width: 200px;
 }
 
+/* ✅ EXPERIENCE TEXT SPACING FIX */
+.about-card h2 {
+    margin: 4px 0;
+    line-height: 1.1;
+}
+
+.about-card p {
+    margin: 2px 0;
+    line-height: 1.1;
+}
+
 /* ========================= */
-/* PORTFOLIO FIX START       */
+/* PORTFOLIO SECTION         */
 /* ========================= */
 
-/* Portfolio section wrapper */
 .portfolio {
     max-width: 1000px;
     margin: 0 auto;
@@ -99,6 +109,7 @@ h2 {
     margin-top: 40px;
 }
 
+/* PROJECT CARDS */
 .project {
     background: white;
     margin: 15px auto;
@@ -107,8 +118,7 @@ h2 {
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     max-width: 900px;
     width: 92%;
-
-    text-align: center; /* ✅ fixes left-aligned text issue */
+    text-align: center;
 }
 
 /* BUTTON */
@@ -121,10 +131,12 @@ h2 {
     text-decoration: none;
     border-radius: 6px;
     font-weight: 500;
+    transition: 0.3s ease;
 }
 
 .btn:hover {
     background: #1d283d;
+    transform: translateY(-2px);
 }
 
 /* LINKS */
